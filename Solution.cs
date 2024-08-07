@@ -24,7 +24,7 @@ public class Solution {
             // Console.Write(strNumber.Substring(i, 1));
 
             //figure out number placement
-            string placeValue = GetPlaceValue(length, i);
+            // string placeValue = GetPlaceValue(length, i);
             // Console.Write($" {placeValue}\n");
 
             int difference = length - i;
@@ -142,13 +142,13 @@ public class Solution {
         return writtenNumber.Replace("  ", " ").Replace("  ", " ").Replace("  ", " ").Replace("  ", " ").Trim();;
     }
 
-    public string GetPlaceValue(int length, int index) {
-        List<NumberWord> placeValue = [ new (1, "ones"), new (2, "tens"), new (3, "hundreds"), new (4, "thousands"), new (5, "tenThousands"), new (6, "hundredThousands"), new (7, "millions"), new (8, "tenMillions"), new (9, "hundredMillions"), new (10, "billions") ];
+    // public string GetPlaceValue(int length, int index) {
+    //     List<NumberWord> placeValue = [ new (1, "ones"), new (2, "tens"), new (3, "hundreds"), new (4, "thousands"), new (5, "tenThousands"), new (6, "hundredThousands"), new (7, "millions"), new (8, "tenMillions"), new (9, "hundredMillions"), new (10, "billions") ];
 
-        int difference = length - index;
+    //     int difference = length - index;
 
-        return placeValue.Find(x => x.number == difference).word;
-    }
+    //     return placeValue.Find(x => x.number == difference).word;
+    // }
 }
 
 public class NumberWord {
